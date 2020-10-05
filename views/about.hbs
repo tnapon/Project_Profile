@@ -1,0 +1,27 @@
+<section id="third">
+        <div class="third container">
+                <div class="col-left">
+                        <div class="third-img">
+                                <img src="/img/me.jpg" alt="img">
+                        </div>
+                </div>
+                <div class="col-right">
+                        <h1 class="section-title">Information<span>ICT</span></h1>
+                        <h2></h2>
+                        {{#with myData.aboutme}}
+                        <li><span class="first-block">Full Name :</span><span class="second-block"></span>{{FullName}}
+                        </li>
+                        <li><span class="first-block">Address :</span><span class="second-block"></span>{{Address}}</li>
+                        <li><span class="first-block">Current Education :</span><span
+                                        class="second-block"></span>{{CurrentEducation}}
+                        </li>
+                        <li><span class="first-block">Upper Secondary Education :</span><span
+                                        class="second-block"></span>{{UpperSecondaryEducation}}</li>
+                        <li><span class="first-block">ALower Secondary Education :</span><span
+                                        class="second-block"></span>{{ALowerSecondaryEducation}}</li>
+
+                        {{/with}}
+
+                </div>
+        </div>
+</section>
