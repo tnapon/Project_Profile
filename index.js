@@ -3,6 +3,7 @@ const router = require('./routes/index');
 const hbs = require('express-handlebars');
 const path = require('path');
 const app = express();
+const PORT = process.env.PORT || 8080;
 
 //Template engine setting
 app.engine('hbs', hbs({ extname: 'hbs' }));
@@ -19,9 +20,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 // })
 
 app.listen(
-    3000,
-    () => {
-        console.log("Listening to port 3000");
-    }
+  PORT,
+  () => {
+    console.log(`Listening to port ${PORT}`);
+  }
 );
+
 
